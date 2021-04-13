@@ -9,13 +9,14 @@
 <ion-content>
   <ion-card class="ion-text-center">
     <ion-card-header>
-      <ion-card-title>Simpan Text</ion-card-title>
+      <ion-card-title>Note Information</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-input placeholder="Judul" [(ngModel)]="Judul"></ion-input>
       <ion-input placeholder="Isi" [(ngModel)]="Isi"></ion-input>
       <ion-input placeholder="Tanggal" [(ngModel)]="Tamggal"></ion-input>
-      <ion-button (click)="simpan()">SIMPAN</ion-button>
+      <ion-input placeholder="NilaiNote" [(ngModel)]="NilaiNote"></ion-input>
+      <ion-button (click)="simpan()">Submit</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

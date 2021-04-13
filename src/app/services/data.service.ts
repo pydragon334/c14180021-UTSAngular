@@ -16,11 +16,12 @@ export class DataService {
   isiData : Observable<data[]>;
   isiDataColl : AngularFirestoreCollection<data>;
   
-  public async simpan(Judul :string, Isi : string, Tanggal : string){
+  public async simpan(Judul :string, Isi : string, Tanggal : string, NilaiNote : string){
     this.isiDataColl.doc(Judul).set({
       judul : Judul,
       isi : Isi,
-      tanggal : Tanggal
+      tanggal : Tanggal,
+      nilainote : NilaiNote
     });
   }
 
@@ -29,5 +30,6 @@ export class DataService {
 interface data{
   judul : string,
   isi : string,
-  tanggal : string
+  tanggal : string,
+  nilainote : string
 }

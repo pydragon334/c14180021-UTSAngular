@@ -19,5 +19,6 @@ export class Tab2Page {
 interface data{
   judul : string,
   isi : string,
-  tanggal : string 
+  tanggal : string,
+  nilainote : string 
 }

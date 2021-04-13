@@ -13,8 +13,9 @@ export class Tab1Page {
   Judul : string;
   Isi : string;
   Tanggal : string;
+  NilaiNote : string;
 
   simpan(){
-    this.dataservice.simpan(this.Judul, this.Isi, this.Tanggal)
+    this.dataservice.simpan(this.Judul, this.Isi, this.Tanggal, this.NilaiNote)
   }
 }
