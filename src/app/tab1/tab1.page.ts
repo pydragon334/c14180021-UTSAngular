@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(public dataservice : DataService) {}
 
+  Judul : string;
+  Isi : string;
+  Tanggal : string;
+
+  simpan(){
+    this.dataservice.simpan(this.Judul, this.Isi, this.Tanggal)
+  }
 }
